@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    assetsInclude: ['../src/assets/**'],
+    assetsInclude: ['../src/assets/**','../src/assets/img/projet/**','../src/assets/img/icone/**' ],
   },
 })
