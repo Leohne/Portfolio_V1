@@ -1,4 +1,4 @@
-import icone from "../assets/icone.json"
+import icone from "../src/assets/icone.json"
 
 function Skill () {
     const iconeJson = icone.map((item, index) => {
