@@ -1,8 +1,8 @@
 [
     {
         "id":"0",
-        "cover": "../src/assets/img/projet/sophie-bluel.webp",
-        "image": "../src/assets/img/projet/site_Sophie_Bluel.webp",
+        "cover": "./src/assets/img/projet/sophie-bluel.webp",
+        "image": "./src/assets/img/projet/site_Sophie_Bluel.webp",
         "nom": "Sophie Bluel",
         "info":"Apprentissage et développement du site en pure JavaScript. Implémentation d'un login, gestion d'API avec fetch, importation d'image depuis un server. ",
         "tech": [
@@ -14,8 +14,8 @@
     },
     {
         "id":"1",
-        "cover": "../src/assets/img/projet/kasaimg.webp",
-        "image": "../src/assets/img/projet/site_Kasa.webp",
+        "cover": "./src/assets/img/projet/kasaimg.webp",
+        "image": "./src/assets/img/projet/site_Kasa.webp",
         "nom": "Kasa",
         "info":"Apprentissage et dévelopmment du site avec React (Props, organisation des fichiers, React Dom Router). Utilisation de Sass et implémentation d'animation",
         "tech": [
@@ -29,8 +29,8 @@
 
     {
         "id":"2",
-        "cover": "../src/assets/img/projet/ninaCarducciimg.webp",
-        "image": "../src/assets/img/projet/site_nina.webp",
+        "cover": "./src/assets/img/projet/ninaCarducciimg.webp",
+        "image": "./src/assets/img/projet/site_nina.webp",
         "nom": "Nina Carducci",
         "info":"Amélioration du score de performance et de SEO du site. Utilisation de meta property et de Rich Snippet (schema.org). Agencement pour une meilleure accessibilité avec wave",
         "tech": [
@@ -45,8 +45,8 @@
 
     {
         "id":"3",
-        "cover": "../src/assets/img/projet/724_logo.webp",
-        "image": "../src/assets/img/projet/724Eventimg.webp",
+        "cover": "./src/assets/img/projet/724_logo.webp",
+        "image": "./src/assets/img/projet/724Eventimg.webp",
         "nom": "724 Events",
         "info":"Débuggage d'un site internet grâce a React Dev Tool. Des tests unitaires, fonctionnels et opérationnels ont été effectué. ",
         "tech": [
@@ -60,8 +60,8 @@
 
     {
         "id":"4",
-        "cover": "../src/assets/img/projet/argentBankimg.webp",
-        "image": "../src/assets/img/projet/site_argentBank.webp",
+        "cover": "./src/assets/img/projet/argentBankimg.webp",
+        "image": "./src/assets/img/projet/site_argentBank.webp",
         "nom": "Argent Bank",
         "info":"Apprentissage et utilisation de Redux. Migration du site HTML en React. Gestion d'API et création de différent endpoints (opération, paramètre, réponse et schéma de donnée) pour le fichier swagger.yml",
         "tech": [

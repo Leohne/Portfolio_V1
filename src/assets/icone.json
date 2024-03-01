@@ -1,42 +1,34 @@
 [
     {
         "nom": "Html",
-        "icone": "../src/assets/icone/html.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/html.svg"
     },
     {
         "nom": "Css",
-        "icone": "../src/assets/icone/css.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/css.svg"
     },
     {
         "nom": "JavaScript",
-        "icone": "../src/assets/icone/js.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/js.svg"
     },
     {
         "nom": "Nodejs",
-        "icone": "../src/assets/icone/nodejs.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/nodejs.svg"
     },
     {
         "nom": "React",
-        "icone": "../src/assets/icone/react.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/react.svg"
     },
     {
         "nom": "Redux",
-        "icone": "../src/assets/icone/redux.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/redux.svg"
     },
     {
         "nom": "Figma",
-        "icone": "../src/assets/icone/figma.svg",
-        "colour": ""
+        "icone": "./src/assets/icone/figma.svg"
     },
         {
             "nom": "Sass",
-            "icone": "../src/assets/icone/sass.svg",
-            "colour": ""
+            "icone": "./src/assets/icone/sass.svg"
         }
     ]
