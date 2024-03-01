@@ -1,0 +1,43 @@
+@use './variables' as vrs;
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../src/assets/img/background/kyle-sung-oQuP_XBjOMY-unsplash.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.textanim {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-image: linear-gradient(to right, vrs.$color-white, vrs.$color-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    z-index: 0;
+    @media screen and (max-width:425px) {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    width: 60%;
+}
+
+.flecheBas {
+    position: absolute;
+    bottom: 40px;
+    border: 2px solid vrs.$color-white;
+    border-radius: 40px;
+    padding: 10px;
+    animation: moveDown 1.5s ease infinite;
+}

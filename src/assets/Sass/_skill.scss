@@ -1,0 +1,64 @@
+@use './variables' as vrs;
+
+.section_skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
+}
+
+.title_skill {
+    margin: 0;
+    @include vrs.hdeux;
+    font-size: 100px;
+    @media screen and (max-width:1024px) {
+        margin-right: 10px;
+        font-size: 70px;
+    }
+    @media screen and (max-width:425px) {
+        font-size: 40px;
+    }
+}
+
+.div_skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid vrs.$color-white;
+    width: 53%;
+    margin-top: 20px;
+    padding-top: 60px;
+    @media screen and (max-width:768px) {
+    width: 100%;
+    }
+}
+
+.icone {
+    &_img {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        @media screen and (max-width:425px) {
+            width: 40px;
+            height: 40px;
+        }        
+    }
+    &_div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+        @media screen and (max-width:425px) {
+        margin: 0 20px;
+        }
+    }
+    &_p {
+    text-align: center;
+    font-size: 30px;
+    @media screen and (max-width:425px) {
+        font-size: 15px;
+    }
+    }
+}

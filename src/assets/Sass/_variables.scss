@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'The-Bold-Font';
+	src: url("../src/assets/font/The_Bold_Font/The_Bold_Font.ttf") format('truetype'),
+}
+
+@font-face {
+	font-family: 'Louis-cafe';
+	src: url('../src/assets/font/Louis_cafe/Louis George Cafe.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Bebas-neue';
+	src: url('../src/assets/font/bebas_neue/BebasNeue-Regular.ttf') format('truetype')
+}
+
+@mixin hdeux {
+    font-family: $font-bold;
+    color: $color-blue;
+    text-align: center;
+}
+
+@mixin spaceBorder {
+	margin-top: 20px;
+    padding-top: 60px;
+}
+
+@keyframes moveDown {
+	0% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(10px);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+
+$font-bold : 'The-Bold-Font';
+$font-cafe : 'Louis-cafe';
+$font-bebas: 'Bebas-neue';
+$color-blue: #92DCE5;
+$color-white: #F8F7F9;
+$color-black: #0F0F0F;

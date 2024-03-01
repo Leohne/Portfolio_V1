@@ -1,0 +1,42 @@
+[
+    {
+        "nom": "Html",
+        "icone": "../src/assets/icone/html.svg",
+        "colour": ""
+    },
+    {
+        "nom": "Css",
+        "icone": "../src/assets/icone/css.svg",
+        "colour": ""
+    },
+    {
+        "nom": "JavaScript",
+        "icone": "../src/assets/icone/js.svg",
+        "colour": ""
+    },
+    {
+        "nom": "Nodejs",
+        "icone": "../src/assets/icone/nodejs.svg",
+        "colour": ""
+    },
+    {
+        "nom": "React",
+        "icone": "../src/assets/icone/react.svg",
+        "colour": ""
+    },
+    {
+        "nom": "Redux",
+        "icone": "../src/assets/icone/redux.svg",
+        "colour": ""
+    },
+    {
+        "nom": "Figma",
+        "icone": "../src/assets/icone/figma.svg",
+        "colour": ""
+    },
+        {
+            "nom": "Sass",
+            "icone": "../src/assets/icone/sass.svg",
+            "colour": ""
+        }
+    ]
