@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Homepage = () => {
-  const text = "Developper Front-end."
+  const text = "Developpeur Front-end."
     const [displayedText, setDisplayedText] = useState('');
     const windowHeight = window.innerHeight;
     const middlePosition = windowHeight / 2;  
