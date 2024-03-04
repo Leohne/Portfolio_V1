@@ -111,20 +111,25 @@
     }
     &-p {
         margin: 5px;
-        padding: 5px;
-        height: 17px;
+        padding: 0 5px;
+        height: 28px;
         border: 2px solid vrs.$color-blue;
         background-color: vrs.$color-blue;
         color: vrs.$color-black;
         border-radius: 15px;
+        text-align: center;
         @media screen and (max-width:1357px) {
             flex-wrap: wrap;
            }
+        @media screen and (max-width:768px) {
+            width: 60%;
+            height: 20px;
+            font-size: large;
+        }
         @media screen and (max-width:425px) {
-            width: 75%;
-            height: 12px;
-            font-size: smaller;
-            text-align: center;
+            width: 60%;
+            height: 15px;
+            font-size: medium;
         }
     }
 }
@@ -139,6 +144,9 @@
     margin-top: auto;
     text-align: end;
     width: 30%;
+    @media screen and (max-width:768px) {
+        width: 40%;
+    }
     @media screen and (max-width:425px) {
         width: 70%;
     }

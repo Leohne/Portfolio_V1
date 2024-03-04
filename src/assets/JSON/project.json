@@ -14,7 +14,7 @@
     },
     {
         "id":"1",
-        "cover": "/img/projet/kasaimg.webp",
+        "cover": "/img/projet/kasa.jpeg",
         "image": "/img/projet/site_Kasa.webp",
         "nom": "Kasa",
         "info":"Apprentissage et développement du site avec React (Props, organisation des fichiers, React Dom Router). Utilisation de Sass et implémentation d'animations.",
@@ -60,7 +60,7 @@
 
     {
         "id":"4",
-        "cover": "/img/projet/argentBankimg.webp",
+        "cover": "/img/projet/argentBank.jpeg",
         "image": "/img/projet/site_argentBank.webp",
         "nom": "Argent Bank",
         "info":"Apprentissage et utilisation de Redux. Migration du site HTML vers React. Gestion des API et création de différents endpoints (opération, paramètre, réponse et schéma de donnée) pour le fichier swagger.yml.",

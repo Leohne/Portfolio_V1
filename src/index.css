@@ -313,7 +313,7 @@ h1 {
   margin: 10px 0;
   cursor: pointer;
   transform: scale(1);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .cardProject:hover {
   transform: scale(0.97);
@@ -771,24 +771,31 @@ textarea {
 }
 .tech_modal-p {
   margin: 5px;
-  padding: 5px;
-  height: 17px;
+  padding: 0 5px;
+  height: 28px;
   border: 2px solid #92DCE5;
   background-color: #92DCE5;
   color: #0F0F0F;
   border-radius: 15px;
+  text-align: center;
 }
 @media screen and (max-width: 1357px) {
   .tech_modal-p {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 768px) {
+  .tech_modal-p {
+    width: 60%;
+    height: 20px;
+    font-size: large;
+  }
+}
 @media screen and (max-width: 425px) {
   .tech_modal-p {
-    width: 75%;
-    height: 12px;
-    font-size: smaller;
-    text-align: center;
+    width: 60%;
+    height: 15px;
+    font-size: medium;
   }
 }
 
@@ -802,6 +809,11 @@ textarea {
   margin-top: auto;
   text-align: end;
   width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .github_modal {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 425px) {
   .github_modal {
