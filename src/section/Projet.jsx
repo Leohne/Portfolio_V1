@@ -20,7 +20,7 @@ function Projet ( {project} ) {
 
     return (
         <section className='projet_div' id="projet">
-        <h2 className="title_projet title">Projet.</h2>
+        <h2 className="title_projet title">Projets.</h2>
         <div className='cardProject-flex'>
             {cardProject}
             {findProjet && <Modal project={findProjet} closeModal={closeModal} />} 

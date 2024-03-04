@@ -55,12 +55,13 @@ function Footer() {
             </div>
           </form>
             <div className="coordonne_contact">
-              <h3 className="title_contact-h3">Coordonnée de Contact</h3>
+              <h3 className="title_contact-h3">Coordonnées de contact</h3>
               <div className="coordonne_div">
                 <div>
                   <div>
-                    <h4 className="label_h4">bricemagneville.pro@gmail.com</h4>
-                    <h4 className="label_h4">Bordeaux (33)</h4>
+                    <p className="label_h4">bricemagneville.pro@gmail.com</p>
+                    <p className="label_h4">07.64.46.11.20</p>
+                    <p className="label_h4">Bordeaux (33)</p>
                   </div>
                   <a className="cv_a" href={CV} download="BM_CV.pdf">
                   <button className="cv_btn">CV</button>
