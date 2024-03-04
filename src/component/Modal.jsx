@@ -45,6 +45,5 @@ function Modal({ project, closeModal }) {
 Modal.propTypes = {
   project: PropTypes.object.isRequired,
   closeModal: PropTypes.func.isRequired,
-  modalClass: PropTypes.string.isRequired,
 };
 export default Modal;
