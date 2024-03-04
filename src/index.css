@@ -708,7 +708,6 @@ textarea {
   display: flex;
   flex-direction: column;
   border-bottom-right-radius: 34px;
-  border-top: 2px solid #F8F7F9;
   padding-top: 20px;
   font-size: 25px;
 }
