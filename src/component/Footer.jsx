@@ -66,7 +66,6 @@ function Footer() {
                   <button className="cv_btn">CV</button>
                   </a>
                 </div>
-                <img className="img_profil" src={profil} alt="Profil Brice Magneville" />
               </div>
             </div>
         </div>

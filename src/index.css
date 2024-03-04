@@ -85,10 +85,15 @@ nav {
   padding: 0;
   overflow: hidden;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  .nav_ul {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 475px) {
   .nav_ul {
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
   }
 }
 .nav_ul-li {
@@ -99,6 +104,11 @@ nav {
   color: #F8F7F9;
   position: relative;
   z-index: 2;
+}
+@media screen and (max-width: 514px) {
+  .nav_ul-li {
+    font-size: large;
+  }
 }
 @media screen and (max-width: 425px) {
   .nav_ul-li {
@@ -111,7 +121,7 @@ nav {
   height: auto;
   margin: 5px 10px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .github {
     display: none;
   }
@@ -124,7 +134,7 @@ nav {
     width: 20%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .github-a {
     display: none;
   }
@@ -155,6 +165,16 @@ nav {
   margin: 0;
   z-index: 0;
 }
+@media screen and (max-width: 737px) {
+  .textanim {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 457px) {
+  .textanim {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 425px) {
   .textanim {
     font-size: 20px;
@@ -176,7 +196,7 @@ h1 {
 
 .present_div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 80px 0;
 }
 @media screen and (max-width: 768px) {
@@ -186,16 +206,21 @@ h1 {
 }
 
 .present_title {
-  margin: 15px 120px 15px 0;
+  margin: 15px 0;
   font-family: "The-Bold-Font";
   color: #92DCE5;
   text-align: center;
   font-size: 80px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1143px) {
   .present_title {
     margin-right: 10px;
     font-size: 70px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .present_title {
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -214,6 +239,14 @@ h1 {
 @media screen and (max-width: 425px) {
   .present_p {
     font-size: 15px;
+  }
+}
+.present_p-div {
+  width: 53%;
+}
+@media screen and (max-width: 768px) {
+  .present_p-div {
+    width: 100%;
   }
 }
 
@@ -239,11 +272,22 @@ h1 {
   font-family: "The-Bold-Font";
   color: #92DCE5;
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
+}
+@media screen and (max-width: 1143px) {
+  .title_projet {
+    margin-right: 10px;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .title_projet {
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 425px) {
   .title_projet {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
@@ -315,12 +359,17 @@ h1 {
   font-family: "The-Bold-Font";
   color: #92DCE5;
   text-align: center;
-  font-size: 100px;
+  font-size: 80px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1143px) {
   .title_skill {
     margin-right: 10px;
     font-size: 70px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .title_skill {
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -388,7 +437,23 @@ h1 {
   font-family: "The-Bold-Font";
   color: #92DCE5;
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
+}
+@media screen and (max-width: 1143px) {
+  .title_contact {
+    margin-right: 10px;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .title_contact {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title_contact {
+    font-size: 50px;
+  }
 }
 .title_contact-h3 {
   font-size: 28px;
@@ -429,7 +494,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 35%;
 }
 @media screen and (max-width: 768px) {
   form {
@@ -461,11 +526,9 @@ textarea {
 .submit {
   display: flex;
   justify-content: flex-start;
-  width: 50%;
   border: 0;
   color: #92DCE5;
   background-color: #0F0F0F;
-  width: 22%;
   height: 50px;
   font-size: 40px;
   font-family: "Bebas-neue";
@@ -489,7 +552,7 @@ textarea {
 }
 
 .coordonne_contact {
-  width: 40%;
+  width: 50%;
 }
 @media screen and (max-width: 1024px) {
   .coordonne_contact {
@@ -506,7 +569,7 @@ textarea {
 .coordonne_div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (max-width: 425px) {
   .coordonne_div {
@@ -519,7 +582,7 @@ textarea {
   display: flex;
   justify-content: flex-start;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .cv_a {
     display: flex;
     justify-content: center;

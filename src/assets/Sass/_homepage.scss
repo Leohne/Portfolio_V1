@@ -24,6 +24,12 @@
     text-align: center;
     margin: 0;
     z-index: 0;
+    @media screen and (max-width:737px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width:457px) {
+        font-size: 25px;
+    }
     @media screen and (max-width:425px) {
         font-size: 20px;
     }

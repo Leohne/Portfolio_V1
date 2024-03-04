@@ -2,7 +2,7 @@
 
 .present_div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 80px 0;
     @media screen and (max-width:768px) {
         flex-direction: column;
@@ -10,12 +10,15 @@
 }
 
 .present_title {
-    margin: 15px 120px 15px 0;
+    margin: 15px 0;
     @include vrs.hdeux;    
     font-size: 80px;
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:1143px) {
         margin-right: 10px;
         font-size: 70px;
+    }
+    @media screen and (max-width:1025px) {
+        font-size: 50px;
     }
     @media screen and (max-width:425px) {
         font-size: 40px;
@@ -32,6 +35,13 @@
     @media screen and (max-width:425px) {
         font-size: 15px;
     }
+    &-div {        
+    width: 53%;
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+    }
+
 }
 
 .p_down {
