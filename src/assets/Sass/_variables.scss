@@ -36,6 +36,23 @@
 	}
   }
 
+@keyframes modalUp {
+	0% {
+		transform: translateY(100%);
+	  }
+	  100% {
+		transform: translateY(0);
+	  }
+}  
+@keyframes modalDown {
+	0% {
+		transform: translateY(0);
+	  }
+	  100% {
+		transform: translateY(100%);
+	  }
+} 
+
 $font-bold : 'The-Bold-Font';
 $font-cafe : 'Louis-cafe';
 $font-bebas: 'Bebas-neue';

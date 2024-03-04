@@ -21,6 +21,22 @@
     transform: translateY(0);
   }
 }
+@keyframes modalUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes modalDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -543,6 +559,11 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .submit_form {
+    justify-content: center;
+  }
+}
 
 .hidden {
   display: none;
@@ -620,71 +641,67 @@ textarea {
   }
 }
 
-.div_modal {
-  display: flex;
-  justify-content: center;
-  z-index: 10;
-  position: fixed;
-  max-width: 900px;
-  max-height: 150px;
-  width: 50%;
-  top: 20%;
-  left: 30%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  border: 2px solid #F8F7F9;
-}
-@media screen and (max-width: 577px) {
-  .div_modal {
-    width: 80%;
-    left: 10%;
-  }
-}
-@media screen and (max-width: 425px) {
-  .div_modal {
-    width: 90%;
-    left: 4%;
-  }
-}
-.div_modal-position {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-@media screen and (max-width: 425px) {
-  .div_modal-position {
-    width: 100%;
-  }
-}
-
-.overlay_modal {
+.div_modal-open {
   z-index: 8;
+  overflow-y: auto;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  background-color: #0F0F0F;
+  animation: modalUp 2s ease-in-out;
+}
+.div_modal-closed {
+  animation: modalDown 1.7s ease-in-out;
+}
+.div_modal-position {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.div_modal-contain {
+  margin-top: 5vh;
+}
+
+.title_modal {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 90px;
+  font-family: "The-Bold-Font";
+  color: #92DCE5;
+}
+@media screen and (max-width: 1143px) {
+  .title_modal {
+    margin-right: 10px;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .title_modal {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title_modal {
+    font-size: 50px;
+  }
 }
 
 .close_modal {
   position: absolute;
-  right: 2%;
   top: 2%;
-  font-family: "The-Bold-Font";
-  color: #0F0F0F;
-  border: 2px solid #0F0F0F;
-  background-color: #F8F7F9;
-  border-radius: 5px;
-  width: 4%;
-  height: 22px;
+  left: 45%;
+  font-family: "Louis-cafe";
+  font-size: x-large;
+  font-weight: bolder;
+  color: #F8F7F9;
+  background-color: #0F0F0F;
+  border-radius: 50%;
+  width: 10%;
+  height: 10px;
   text-align: center;
   cursor: pointer;
-}
-@media screen and (max-width: 425px) {
-  .close_modal {
-    right: 7%;
-  }
 }
 
 .info_modal {
@@ -693,7 +710,12 @@ textarea {
   border-bottom-right-radius: 34px;
   border-top: 2px solid #F8F7F9;
   padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+}
+@media screen and (max-width: 425px) {
+  .info_modal {
+    font-size: 15px;
+  }
 }
 
 .p_modal {
@@ -724,6 +746,10 @@ textarea {
   .img_modal {
     max-width: 450px;
   }
+}
+.img_modal-position {
+  display: flex;
+  justify-content: center;
 }
 
 .tech_modal {
@@ -776,11 +802,6 @@ textarea {
   margin-top: auto;
   text-align: end;
   width: 30%;
-}
-@media screen and (max-width: 1360px) {
-  .github_modal {
-    width: 50%;
-  }
 }
 @media screen and (max-width: 425px) {
   .github_modal {

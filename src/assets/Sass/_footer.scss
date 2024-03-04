@@ -96,6 +96,9 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width:768px) {
+        justify-content: center;
+    }
 }
 .hidden {    
     display: none;

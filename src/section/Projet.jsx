@@ -10,8 +10,17 @@ function Projet ( {project} ) {
         setFindProjet(projetInfo)
     }
     const closeModal = () => {
-        setFindProjet(false)
+        const modal = document.querySelector('.div_modal');
+    if (modal) {
+        modal.classList.add('div_modal-closed');
+    setTimeout(() => {
+        // Changer l'état pour fermer la modale
+        setFindProjet(null);
+    }, 1700);
     }
+}
+    const modalClass = findProjet ? 'div_modal-open' : '';
+    
     const cardProject = project.map((item, index) => {
         return <div className='cardProject' onClick={() => openModal(item.id)} key={index}> 
         <img className='cardProject-img' src={item.cover} alt={item.nom} />
@@ -23,8 +32,9 @@ function Projet ( {project} ) {
         <h2 className="title_projet title">Projets.</h2>
         <div className='cardProject-flex'>
             {cardProject}
-            {findProjet && <Modal project={findProjet} closeModal={closeModal} />} 
-            
+            <div className={`div_modal ${modalClass}`}>                
+            {findProjet && <Modal project={findProjet} closeModal={closeModal}/>}            
+            </div>
         </div>        
         </section>        
     )
@@ -32,6 +42,6 @@ function Projet ( {project} ) {
 
 Projet.propTypes = {
     project: PropTypes.array.isRequired,
-  };
+};
 
 export default Projet

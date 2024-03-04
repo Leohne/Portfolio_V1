@@ -11,7 +11,7 @@ function Skill () {
     })
     return (
         <section className="section_skill" id="competence">
-            <h2 className="title_skill title">Compétence.</h2>
+            <h2 className="title_skill title">Compétences.</h2>
             <div className="div_skill"> {iconeJson} </div>
         </section>
     )
